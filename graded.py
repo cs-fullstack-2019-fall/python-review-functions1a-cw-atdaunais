@@ -6,7 +6,9 @@ def main():
     print(evenOrOdd())
     print(prob4_main(greeting_word()))
     print(quit_func())
-    print(receiveNums())
+    number1 = int(input("Enter a number: "))
+    number2 = int(input("Enter another number: "))
+    print(receiveNums(number1, number2))
 
 
 def printNumbers():
@@ -49,9 +51,7 @@ def quit_func():
             return "Goodbye!"
 
 
-def receiveNums():
-    num1 = int(input("Enter a number: "))
-    num2 = int(input("Enter another number: "))
+def receiveNums(num1, num2):
     return f"The sum of {num1} + {num2} is: {num1 + num2}\n" \
            f"The difference of {num1} - {num2} is: {num1 - num2}\n" \
            f"The product of {num1} * {num2} is {num1 * num2}\n" \
